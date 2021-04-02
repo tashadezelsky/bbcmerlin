@@ -62,6 +62,32 @@ function showArthurs() {
         arthurImage.classList.add("image-container");
         arthurImage.src = arthur.fields.image[0].url;
         faceContainer.append(arthurImage);
+
+        //add episode title
+        var episodeTitle = document.createElement("h3");
+        episodeTitle.classList.add("episode-title");
+        episodeTitle.innerText = arthur.fields.episode;
+        faceContainer.append(episodeTitle);
+
+        //add description 
+        var faceDescription = document.createElement("p");
+        faceDescription.classList.add("face-desc");
+        faceDescription.innerText = arthur.fields.thots;
+        faceContainer.append(faceDescription);
+
+        //add ranking
+        var rankingOutof = document.createElement("h4");
+        rankingOutof.classList.add("ranking");
+        rankingOutof.innerText = arthur.fields.number;
+        faceContainer.append(rankingOutof);
+
+        //add event listener, click on container things will appear 
+        faceContainer.addEventListener("click", function(){
+            faceDescription.classList.toggle("active");
+            rankingOutof.classList.toggle("active");
+        })
+
+
     });
 }
 

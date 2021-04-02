@@ -4,36 +4,87 @@ body {
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
+    border: 2px solid;
+    margin: 1rem;
 }
 
+@font-face {
+    font-family: novgoth;
+    src: url(ngothic.ttf);
+}
 
 {
     box-sizing: border-box;
  }
 
 .container {
-    border: 1px solid black;
     border-radius: 25px;
     padding: 1rem;
+    grid-gap: 20px;
     display: flex;
     flex-wrap: wrap;
     min-height: 100vh;
-    grid-gap: 20px;
-    justify-content:space-evenly;
+    justify-content: center;
+    align-content: center;
 }
 
+/*--.header {
+    font-family: novgoth;
+    z-index: 0;
+    color: white;
+    justify-self:center;
+
+}
+--*/
+
 .face-container {
-    padding: 2rem;
+    display: grid;
+    flex-direction: row;
+    grid-template-rows: 1fr;
+    grid-gap: 7px;
+    padding: 2rem 2rem 1rem 2rem;
     border: 2px solid black;
     border-radius: 25px;
-    max-width: 100%;
+    max-width: 250px;
+    min-width: 250px;
+    justify-content: center;
 }
 
 img {
-    min-width: 250px;
-    max-width: 250px;
-    max-height: 250px;
+    min-width: 16.25rem;
+    max-width: 16.25rem;
+    max-height: 16.25rem;
     border-radius: 25px;
+    justify-self: center;
+}
+
+.episode-title {
+    text-align: center;
+    align-self: center;
+}
+
+.face-desc{
+    text-align: justify;
+    align-self: center;
+    display: none;
+}
+
+.face-desc.active{
+    display: block;
+}
+
+.ranking {
+    text-align: center;
+    font-size: 30px;
+    align-self: center;
+    display: none;
+}
+
+.ranking.active {
+    display: block;
+}
+
+
 }
 
 /*--.header {
