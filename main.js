@@ -27,6 +27,7 @@ function gotAllArthurs(err) {
 
  consoleLogArthurs();
  showArthurs();
+ showArthurLarge();
 }
 
 function consoleLogArthurs() {
@@ -54,7 +55,7 @@ function showArthurs() {
 
         //new div container where all the song info will go
         var faceContainer = document.createElement("div");
-        faceContainer.classList.add("face-container")
+        faceContainer.classList.add("face-container");
         document.querySelector(".container").append(faceContainer);
 
         //add the picture 
@@ -89,6 +90,8 @@ function showArthurs() {
 
 
     });
+
+;
 }
 
 

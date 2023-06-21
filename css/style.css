@@ -50,6 +50,11 @@ body {
     justify-content: center;
 }
 
+.face-container:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 img {
     min-width: 16.25rem;
     max-width: 16.25rem;
